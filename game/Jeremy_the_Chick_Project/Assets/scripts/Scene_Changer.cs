@@ -25,4 +25,9 @@ public class Scene_Changer : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void PlayUISound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI Click");
+    }
 }

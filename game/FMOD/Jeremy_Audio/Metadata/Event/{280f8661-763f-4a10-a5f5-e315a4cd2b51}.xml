@@ -5,7 +5,7 @@
 			<value>Item Destroyed</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{90816c14-84f5-47bc-9aa9-11b803185e4b}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{ee149a03-9046-4170-830a-c0f0deaeb753}" />
 	<object class="MarkerTrack" id="{e2b8e4d6-68cd-4cde-aff5-bb0d653a6098}" />
 	<object class="GroupTrack" id="{a28984f6-5905-4c46-9070-2b44f0e0dcbb}">
+		<relationship name="modules">
+			<destination>{eaa2b816-2dad-4ca2-a0f9-a79abb3ce88e}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{24e9da34-d070-4c63-bc87-4ebbf4e6ef1f}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{c7e73bd7-3d71-4b7f-a798-664191b4c330}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{eaa2b816-2dad-4ca2-a0f9-a79abb3ce88e}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{481dc55d-5def-43d0-b81f-bd22234aa600}">
 		<relationship name="modules">
@@ -97,6 +100,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{26702d8b-65f3-4f57-b18e-2c4935e7edca}" />
+	<object class="SingleSound" id="{eaa2b816-2dad-4ca2-a0f9-a79abb3ce88e}">
+		<property name="length">
+			<value>0.12081632653061225</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{9b2f1511-6f3a-4381-98bd-267e8dc97426}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{24e9da34-d070-4c63-bc87-4ebbf4e6ef1f}">
 		<property name="name">
 			<value>Audio 1</value>

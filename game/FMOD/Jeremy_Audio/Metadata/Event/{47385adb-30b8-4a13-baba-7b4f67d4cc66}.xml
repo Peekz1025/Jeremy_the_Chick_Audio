@@ -5,7 +5,7 @@
 			<value>UI Click</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{90816c14-84f5-47bc-9aa9-11b803185e4b}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{9bd47ee8-2674-44e5-a261-3a3649c0b8a0}" />
 	<object class="MarkerTrack" id="{4f8b8ef5-6aa5-473e-98d0-b6f14dd2bc9e}" />
 	<object class="GroupTrack" id="{022313ba-1a44-4501-96c7-8ed6166b9980}">
+		<relationship name="modules">
+			<destination>{94a7b499-3568-448c-8503-d521a681041b}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a8237569-cdb5-4e94-92e9-148ac2f16eb3}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{81736c51-dd15-4ff2-9f7f-54649bd82fc1}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{94a7b499-3568-448c-8503-d521a681041b}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{bc3cda99-9f2c-4862-804f-451851a89fe5}">
 		<relationship name="modules">
@@ -97,6 +100,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ea20825a-a76a-497f-9cd0-1b1a39f8cd41}" />
+	<object class="SingleSound" id="{94a7b499-3568-448c-8503-d521a681041b}">
+		<property name="length">
+			<value>0.187437641723356</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{2fbb4704-e72f-4179-926f-411a55a49070}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{a8237569-cdb5-4e94-92e9-148ac2f16eb3}">
 		<property name="name">
 			<value>Audio 1</value>

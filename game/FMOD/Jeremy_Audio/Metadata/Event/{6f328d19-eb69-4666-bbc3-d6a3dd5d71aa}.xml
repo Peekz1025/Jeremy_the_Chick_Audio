@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{6f328d19-eb69-4666-bbc3-d6a3dd5d71aa}">
 		<property name="name">
-			<value>Light Item Drop</value>
+			<value>Light Drop</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{90816c14-84f5-47bc-9aa9-11b803185e4b}</destination>
@@ -65,14 +65,17 @@
 	<object class="EventAutomatableProperties" id="{5d4f7fba-2e0d-4643-b87f-f63245913c91}" />
 	<object class="MarkerTrack" id="{ca404729-d272-419d-9ddb-ee999ea0a080}" />
 	<object class="GroupTrack" id="{d262d5f5-1c2e-4752-8f81-c4cf860c6060}">
+		<relationship name="modules">
+			<destination>{ea4b0f06-3771-4756-86fa-260ce3b5b758}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{6c687823-a59d-4036-b813-642676abee8a}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{c4d7e8b0-2924-47b7-8e83-643016599975}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{ea4b0f06-3771-4756-86fa-260ce3b5b758}</destination>
+		</relationship>
 	</object>
 	<object class="ActionSheet" id="{3f38c86f-26d3-494e-9014-69b0dcfb7f75}">
 		<relationship name="modules">
@@ -97,6 +100,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5990efb4-d9f8-419d-918c-d20e12f25ed2}" />
+	<object class="SingleSound" id="{ea4b0f06-3771-4756-86fa-260ce3b5b758}">
+		<property name="length">
+			<value>0.1273469387755102</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{86dd7c09-899e-419f-b28f-660aaec3c4d9}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{6c687823-a59d-4036-b813-642676abee8a}">
 		<property name="name">
 			<value>Audio 1</value>
