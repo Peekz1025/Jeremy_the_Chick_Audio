@@ -7,6 +7,7 @@ public class Scene_Changer : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene("game");
+        PlayBackgroundSound();
     }
 
     public void LoadHome()
@@ -19,6 +20,7 @@ public class Scene_Changer : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
+        PlayBackgroundSound();
     }
 
     public void ExitGame()
@@ -29,5 +31,10 @@ public class Scene_Changer : MonoBehaviour
     public void PlayUISound()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI Click");
+    }
+
+    public void PlayBackgroundSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Background Music");
     }
 }

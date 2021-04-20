@@ -23,7 +23,7 @@ public class Touch_Drag : Touch_Sprite
         myRigid = GetComponent<Rigidbody2D>();
         myRigid.angularVelocity = 0;
 
-        playerState = FMODUnity.RuntimeManager.CreateInstance("event:/Item Dragging");
+        //playerState = FMODUnity.RuntimeManager.CreateInstance("event:/Item Dragging");
     }
 
     // Update is called once per frame
@@ -31,11 +31,12 @@ public class Touch_Drag : Touch_Sprite
     {
         if (isDragging)
         {
+            /*
             if (isplaying == false)
             {
                 playerState.start();
                 isplaying = true;
-            }
+            }*/
 
             Vector3 pos = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, transform.position.z) - transform.position;
             transform.Translate(pos);
@@ -53,8 +54,8 @@ public class Touch_Drag : Touch_Sprite
             myHitbox.enabled = true;
             myRigid.gravityScale = 1.5f;
 
-            playerState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            isplaying = false;
+            //playerState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            //isplaying = false;
         }
     }
 
@@ -68,11 +69,12 @@ public class Touch_Drag : Touch_Sprite
             myRigid.angularVelocity = 0;
             this.transform.rotation = new Quaternion(0,0,0,0);
 
+            /*
             if (isplaying == false)
             {
                 playerState.start();
                 isplaying = true;
-            }
+            }*/
         }
     }
 

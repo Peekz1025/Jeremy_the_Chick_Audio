@@ -130,7 +130,7 @@ MonoBehaviour:
   Path: ../FMOD/Jeremy_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637540141696397777
+  lastModified: 637544659949781785
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -150,13 +150,13 @@ MonoBehaviour:
   guid: bd41681412b9cb4db2869906539a0651
   Banks:
   - {fileID: -5134224835489937341}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 400945
 --- !u!114 &-3194264761967986311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
   - {fileID: -5134224835489937341}
   StringsBanks:
   - {fileID: 3681040962970432856}
-  stringsBankWriteTime: 637540141696412656
+  stringsBankWriteTime: 637544659949801628
   cacheVersion: 6
 --- !u!114 &36235416776044876
 MonoBehaviour:
@@ -323,7 +323,7 @@ MonoBehaviour:
   Path: ../FMOD/Jeremy_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637540141696412656
+  lastModified: 637544659949801628
   LoadResult: 0
   FileSizes:
   - Name: Desktop
