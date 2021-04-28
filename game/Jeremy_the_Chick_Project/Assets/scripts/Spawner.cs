@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
 
     void PlaySpawnSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Item Spawned");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Item Spawned");
     }
 }
 

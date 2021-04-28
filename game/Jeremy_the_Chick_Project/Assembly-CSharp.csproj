@@ -73,6 +73,7 @@
     <Compile Include="Assets\scripts\Jeremy.cs" />
     <Compile Include="Assets\scripts\Log_test.cs" />
     <Compile Include="Assets\scripts\Lose_Condition.cs" />
+    <Compile Include="Assets\scripts\Music_Script.cs" />
     <Compile Include="Assets\scripts\Parallax.cs" />
     <Compile Include="Assets\scripts\Particle_Destory.cs" />
     <Compile Include="Assets\scripts\Pause_Menu.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\scripts\Scene_Changer.cs" />
     <Compile Include="Assets\scripts\Sky_Builder.cs" />
     <Compile Include="Assets\scripts\Spawner.cs" />
+    <Compile Include="Assets\scripts\Thud_Sound.cs" />
     <Compile Include="Assets\scripts\Touch_Drag.cs" />
     <Compile Include="Assets\scripts\Touch_Sprite.cs" />
     <Compile Include="Assets\scripts\World_Builder.cs" />

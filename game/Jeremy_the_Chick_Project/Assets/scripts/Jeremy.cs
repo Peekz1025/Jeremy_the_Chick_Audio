@@ -99,7 +99,7 @@ public class Jeremy : Entity
             {
                 CreateDust();
                 setVelocity(new Vector2(velocity.x, jumpVelocity));
-
+                PlayHopSound();
                 state_grounded = false;
                 break;
             }
@@ -122,8 +122,14 @@ public class Jeremy : Entity
 
     void PlaySpringSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Spring Jump");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Spring Jump");
     }
+
+    void PlayHopSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Jeremy Hop");
+    }
+
 }
 
 

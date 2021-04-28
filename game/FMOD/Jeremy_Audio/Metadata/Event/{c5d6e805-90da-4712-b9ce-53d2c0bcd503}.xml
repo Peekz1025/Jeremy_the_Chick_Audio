@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{c5d6e805-90da-4712-b9ce-53d2c0bcd503}">
 		<property name="name">
-			<value>Jeremy Walks Click</value>
+			<value>Jeremy Walks</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{90816c14-84f5-47bc-9aa9-11b803185e4b}</destination>
+			<destination>{956be3d6-4db6-4da3-819e-d85e0011ab11}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{34972d8e-7b46-492f-9ed5-00dc73551eb1}</destination>
@@ -52,6 +52,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{46be6f35-7955-457a-bba8-667db1391df8}">
+		<relationship name="masters">
+			<destination>{2f887211-0ca6-4918-9936-d09515c961bd}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{7d02daf9-6883-467b-983f-75eded672f1b}</destination>
 		</relationship>
@@ -59,7 +62,7 @@
 			<destination>{57be3422-718b-474b-a6bc-3736a4e62f61}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{45e36844-cdaa-4508-8215-f6f2041147b5}</destination>
+			<destination>{a30b861a-74c3-495f-a75e-d6679c4fd084}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{0ff5f3ef-b9e5-43fd-984d-36a5d447fbfd}" />

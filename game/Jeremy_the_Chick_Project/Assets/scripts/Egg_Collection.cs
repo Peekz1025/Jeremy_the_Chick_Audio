@@ -58,6 +58,6 @@ public class Egg_Collection : MonoBehaviour
 
     void PlayEggSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Egg Collect");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Egg Collect");
     }
 }

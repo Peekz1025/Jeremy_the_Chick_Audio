@@ -1378,6 +1378,11 @@ namespace FMOD.Studio
             return hasHandle() && FMOD_Studio_EventInstance_IsValid(this.handle);
         }
 
+        public bool getPaused(out RESULT i)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
     }
 

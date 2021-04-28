@@ -53,6 +53,6 @@ public class ClearTrash : MonoBehaviour
 
     void PlayDestroySound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Item Destroyed");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Effects/Item Destroyed");
     }
 }

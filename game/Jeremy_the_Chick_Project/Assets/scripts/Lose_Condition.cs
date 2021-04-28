@@ -78,7 +78,7 @@ public class Lose_Condition : MonoBehaviour
     {
         if(playdeath == false)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Death Sound");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Death Sound");
             playdeath = true;
         }
     }
