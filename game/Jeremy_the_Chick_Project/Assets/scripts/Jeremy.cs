@@ -24,7 +24,8 @@ public class Jeremy : Entity
     // Update is called once per frame
     void Update()
     {
-        if(right)
+
+        if (right)
         {
             setVelocity(new Vector2(2, velocity.y));
             if (movementController.data.right.hit)

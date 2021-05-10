@@ -2593,6 +2593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35cf2c90050a0fa48b6e89ab2ed2d67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  danger: 0
   isplaying: 0
   isPaused: 0
   gameOverUI: {fileID: 1086193647}
