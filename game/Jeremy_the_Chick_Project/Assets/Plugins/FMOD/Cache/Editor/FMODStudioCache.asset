@@ -296,7 +296,7 @@ MonoBehaviour:
   Path: ../FMOD/Jeremy_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637561894727029379
+  lastModified: 637571984522681932
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -363,6 +363,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-4176465837942676362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Background Music/Time
+  m_EditorClassIdentifier: 
+  Name: Time
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3813661852174952199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,14 +562,12 @@ MonoBehaviour:
   - {fileID: 6771569067892476226}
   - {fileID: 2851217308704531861}
   - {fileID: 7949159970754641529}
-  - {fileID: 4979993985938971856}
-  - {fileID: -7747251944061920694}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5134224835489937341}
   StringsBanks:
   - {fileID: 3681040962970432856}
-  stringsBankWriteTime: 637561894727049209
+  stringsBankWriteTime: 637571984522697098
   cacheVersion: 6
 --- !u!114 &36235416776044876
 MonoBehaviour:
@@ -836,11 +854,11 @@ MonoBehaviour:
   Path: ../FMOD/Jeremy_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637561894727049209
+  lastModified: 637571984522697098
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1818
+    Value: 1672
   Exists: 1
 --- !u!114 &3701753093034358064
 MonoBehaviour:
@@ -1190,8 +1208,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8685138162456383846}
-  - {fileID: -7394619074358237414}
+  - {fileID: -4176465837942676362}
   MinDistance: 0
   MaxDistance: 0
   Length: 380754

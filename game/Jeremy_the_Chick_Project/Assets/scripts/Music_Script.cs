@@ -24,31 +24,12 @@ public class Music_Script : MonoBehaviour
     {
         backgroundMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Background Music");
         jeremyWalk = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jeremy Walks");
-        backgroundMusic.setParameterByName("Danger", danger);
 
         PlayBackgroundSound();
     }
 
     void Update()
     {
-        backgroundMusic.setParameterByName("Danger", danger);
-        currTime += Time.deltaTime;
-
-        //once a second, increase the danger by 0.0083
-        if (currTime <= 120)
-        {
-            if (prevTime-1 <= currTime && currTime <= prevTime + 1)
-            {
-                danger += 0.0083f;
-                prevTime = prevTime + 1;
-            }
-        }
-        /*Debug.Log("Danger: "+ danger);
-        Debug.Log("Time: " + currTime);
-        Debug.Log("Previous: " + prevTime);*/
-
-
-
         if (pausePanel.activeSelf == true)
         {
             PauseBackgroundSound();
